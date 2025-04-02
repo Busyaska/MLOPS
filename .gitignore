@@ -172,3 +172,5 @@ cython_debug/
 
 data/
 mlruns/
+lab3/newvenv/
+lab3/dataset
