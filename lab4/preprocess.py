@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def preprocess():
+def preprocess_dataset():
     df = pd.read_csv('dataset/enhanced_anxiety_dataset.csv')
 
     df.rename(lambda x: x if ' ' not in x else x.replace(' ', '_'), axis='columns', inplace=True)

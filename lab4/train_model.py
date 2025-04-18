@@ -16,7 +16,7 @@ def eval_metrics(actual, pred):
     return rmse, mae, r2
 
 
-def train_model():
+if __name__ == '__main__':
     df = pd.read_csv('dataset/cleared_data.csv', index_col=0)
     X = df.drop('Anxiety_Level_(1-10)', axis=1)
     Y = df['Anxiety_Level_(1-10)']

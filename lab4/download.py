@@ -3,7 +3,7 @@ import shutil
 import os
 
 
-def download():
+def download_dataset():
     destination = "dataset"
     os.makedirs(destination, exist_ok=True)
     path = kagglehub.dataset_download("natezhang123/social-anxiety-dataset", force_download=True)
